@@ -12,6 +12,7 @@
             height: 100%;
             overflow: hidden;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
@@ -20,12 +21,30 @@
         }
         .content {
             position: absolute;
-            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
-            font-size: 3em;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
+        }
+        .content h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footer h3 {
+            font-size: 1em;
+            margin: 0;
         }
         video {
             position: absolute;
@@ -43,11 +62,11 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        UNDER CONSTRUCTION
+    <div class="content">
+        <h2>UNDER CONSTRUCTION</h2>
     </div>
     <div class="footer">
-        Powered by ABSOL X
+        <h3>Powered by ABSOL X</h3>
     </div>
     <video autoplay muted loop>
         <source src="ABSOL X core logo1.mp4" type="video/mp4">
